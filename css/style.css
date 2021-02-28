@@ -286,13 +286,49 @@ body.ie ._ibg img {
   z-index: 3;
 }
 
+.header_home.fx {
+  position: fixed;
+  background-color: #0f5f5c;
+  opacity: 0.95;
+  height: 84px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .header_contactUs {
   position: relative;
   background-color: #fff;
 }
 
+.header_contactUs.fx {
+  position: fixed;
+  background-color: #83a7a5;
+  opacity: 1;
+  height: 84px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header_contactUs.fx .icon-menu span {
+  background-color: #fff;
+}
+
+.header_contactUs.fx .header__logo {
+  color: #fff;
+}
+
+.header_contactUs.fx .header__phone a {
+  color: #fff;
+}
+
+.header_contactUs.fx .header__link {
+  color: #fff;
+}
+
 .header_contactUs .header__logo {
-  color: #0f5f5c;
+  color: #83a7a5;
 }
 
 .header_contactUs .header__phone a {
@@ -483,10 +519,6 @@ body.ie ._ibg img {
 
 .icon-menu {
   display: none;
-}
-
-.header__list_contactUs {
-  background-color: #fff;
 }
 
 .banner {
@@ -1067,6 +1099,7 @@ body.ie ._ibg img {
 .block-9 {
   background: url("../img/banner/01.png") 0 0 no-repeat fixed;
   position: relative;
+  z-index: 2;
 }
 
 .block-9::after {
@@ -1323,10 +1356,6 @@ body.ie ._ibg img {
           box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.11);
 }
 
-.contact-us__form .form__line._error {
-  border: 1px solid #c0301c;
-}
-
 .contact-us__form .form__line._focus {
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
@@ -1349,6 +1378,22 @@ body.ie ._ibg img {
   padding: 13px 15px;
   font-size: 14px;
   line-height: 20px;
+}
+
+.form__line {
+  position: relative;
+}
+
+.form__error {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translate(0, 100%);
+      -ms-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  line-height: 14px;
+  font-size: 11px;
+  color: #c0301c;
 }
 
 .headquarter {
@@ -1736,6 +1781,11 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 767.98px) {
+  .header_contactUs.fx .menu__body_contactUs {
+    opacity: 1;
+    background-color: #83a7a5;
+  }
+
   .header__link {
     opacity: 1;
     font-size: 18px;
@@ -1807,7 +1857,7 @@ body.ie ._ibg img {
 
   .menu__body {
     position: relative;
-    z-index: 5;
+    z-index: 8;
     display: block;
     position: fixed;
     left: 100%;
@@ -1816,7 +1866,7 @@ body.ie ._ibg img {
     height: 100%;
     padding: 90px 0px 20px 0px;
     text-align: center;
-    background-color: #2d6e70;
+    background-color: #83a7a5;
     -webkit-transition: left 0.5s ease 0s;
     -o-transition: left 0.5s ease 0s;
     transition: left 0.5s ease 0s;
